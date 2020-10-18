@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<title>DJI</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- Container -->
+		<a href="#section1"><img id="logo" src="img/logo2.png" alt="dji"></a>
+
+		<!-- Navigation Bar -->
+		<div class="navbar">
+			<!-- Flex Item -->
+			<div><a href="#">HOME</a></div>
+			<div><a href="#">PRODUCTS</a></div>
+			<div><a href="#">SUPPLIERS</a></div>
+			<div><a href="#">ABOUT</a></div>
+		</div>
+		
+		<!-- Main Container -->
+		<div class="main">
+			<!-- Column 1 -->
+			<div class="col-1">
+				<!-- Introduction text -->
+				<div class="intro">
+					<h1>Mavic Air 2</h1>
+					<h5>Up Your Game</h5>
+					<p>Mavic Air 2 takes power and portability to the next level, offering advanced features in a compact form factor. Intelligent shooting functions and excellent image quality put aerial masterpieces within reach. Safer, smarter flight enables you to up your game while fully enjoying the creative process.</p>
+				</div>
+				<!-- TOP MAVIC 2 DRONE IMAGE -->
+				<div id="mavic2">
+					<img src="img/mavic2.png" alt="drone">
+				</div>
+
+
+				<!-- SLIDER CONTAINER -->
+				<div class="slideshow-container" id="section1">
+					<!-- IMAGES 720x480 -->
+					<div class="slider fade">
+						<img src="img/img1.jpg" alt="1">
+					</div>
+					<div class="slider fade">
+						<img src="img/img2.jpg" alt="2">
+					</div>
+					<div class="slider fade">
+						<img src="img/img3.jpg" alt="3">
+					</div>
+					<div class="slider fade">
+						<img src="img/img4.jpg" alt="4">
+					</div>
+
+
+					<!-- BUTTONS -->
+					<div class="buttons-container">
+						<a class="prev" onclick="plusSlides(-1)">&#9001;</a>
+						<a class="next" onclick="plusSlides(1)">&#9002;</a>
+					</div>
+										
+					<!-- DOTS -->
+					<div class="dots-container">
+						<span class="dot" onclick="currentSlide(1)"></span>
+						<span class="dot" onclick="currentSlide(2)"></span>
+						<span class="dot" onclick="currentSlide(3)"></span>
+						<span class="dot" onclick="currentSlide(4)"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	<!-- Footer -->
+	<footer>
+		<p>Copyright © 24.09.2020 DJI All Rights Reserved.<br />
+		Joakim Edkvist | Jack Xia | Mats Kristoffersen</p>
+	</footer>
+<script src="js/slider.js"></script>
+</body>
+</html>
