@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<title>DJI</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="css/suppliers.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap" rel="stylesheet">
+</head>
+<body>
+	<!-- Container -->
+    <a href="#section1"><img id="logo" src="img/logo2.png" alt="dji"></a>
+	<!-- Navigation Bar -->
+	<div class="navbar">
+		<!-- flex item -->
+		<!-- OBSOLETE<img id="logo" src="img/logo2.png" alt="dji"> -->
+		<div><a href="index.html">HOME</a></div>
+		<div><a href="#">PRODUCTS</a></div>
+		<div><a href="suppliers.html">SUPPLIERS</a></div>
+		<div><a href="aboutus.html">ABOUT</a></div>
+	</div>
+
+
+    <div class="mapstyle">
+	    <!--The div element for the map -->
+    <div id="map"></div>
+    <script>
+        // Initialize and add the map
+     function initMap() {
+        // The location of DJI Authorized Store Oslo 
+     var Store = {lat: 59.911491, lng: 10.741000};
+        // The map, centered at Oslo
+     var map = new google.maps.Map(
+     document.getElementById('map'), {zoom: 4, center: Store});
+       // The marker, positioned at store in Oslo
+     var marker = new google.maps.Marker({position: Store, map: map});
+}
+    </script>
+      <!-- where you insert API Key -->
+    <script defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBnkV06bTXArP26qiwh9D1WRfEdMAjC9RI&callback=initMap">
+    </script>
+    </div>
+     
+     <!-- Supplierobjects -->
+		 <div class="suppliers-flex-item1">
+		 	<h1 id="section1">FIND YOUR LOCAL SUPPLIER</h1><br><br>
+		    <h2>Elkjøp</h2>
+		     <p>Please feel free to visit any of our Elkjøp partner stores for further information.</p>
+		       <br>
+               <a  id="linkstyleelkjop" href="https://www.elkjop.no/">www.elkjop.no</a>
+               <br>
+               <img class="img-suppliers" src="img/Elkjop-Nordic.png" alt="Elkjøp">
+     </div>
+
+         <div class="suppliers-flex-item2">
+           <h2>Japan Photo</h2>
+             <p>Please feel free to visit any of our Japan Photo partner stores for furter information</p>
+               <br>
+               <a id="linkstylejapanphoto" href="https://www.japanphoto.no/?cref=ref_sem_goo_K15346601-VT!668727399!kwd-540154903!418713320066!!c_18_x&nlo=false&keyword=japan%20photo&s_kwcid=AL!6025!3!418713320066!e!!g!!japan%20photo&gclid=Cj0KCQjwk8b7BRCaARIsAARRTL7a8PMlJ0q9tRPqCvq0rfc95t1FTdkfU5YsZycZwv-kSEYiC7mc7K8aAuXgEALw_wcB">www.japanphoto.no</a> 
+               <br>
+                 <img class="img-suppliers" src="img/japanphoto.jpeg" alt="Japanphoto">
+          </div>
+
+            <div class="suppliers-flex-item3">
+		          <h2>Komplett</h2>
+		            <p>Please feel free to visit any of our Elkjøp partner stores for further information.</p>
+		            <br>
+                <a id="linkstylekomplett" href="https://www.komplett.no/">www.komplett.no</a>
+                <br>
+                <img class="img-suppliers"  src="img/komplett.no.png" alt="Komplett">
+	         </div>
+	<!-- Footer -->
+	<footer>
+    <p>Copyright © 24.09.2020 DJI All Rights Reserved.<br />
+    Joakim Edkvist | Jack Xia | Mats Kristoffersen</p>
+  </footer>
+</body>
+</html>
