@@ -232,7 +232,10 @@ body{
 	object-fit: contain;
 }
 
-
+/*#mobileOnlyGallery img{
+	display: none;
+}
+*/
 
 
 /* Footer */
@@ -254,7 +257,9 @@ footer{
 		font-size: 0.75em;
 	}
 
-
+#mobileOnlyGallery{
+	display: none;
+}
 
 
 
@@ -421,6 +426,55 @@ and (max-width:480px){
 		footer > p{
 			font-size: 0.5em; /*8px*/
 		}
+}
+@media only screen
+and (max-width:320px){
+	.main {
+		overflow: hidden;
+	}
+	body{
+		background-color: #EEE;
+	}
+	.intro{
+		/*width: 400px;*/
+		width: 35em;
+	}
+	.navbar{
+	display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	align-items: center;
+	}
+		.navbar > div{
+			line-height: 4vh;
+			font-size: 2vh;
+		}
+	
+	.slideshow-container{
+		display: none;
+	}
+		
+	.dots-container{
+		text-align: center;
+		position: absolute;
+		top: 350px;
+		display: block;
+		right: 44.5%;
+	}
+	footer{
+		height: 30px;
+	}
+		footer > p{
+			font-size: 0.5em; /*8px*/
+		}
+
+	#mobileOnlyGallery {
+		display: block;
+		text-align: center;
+	}
+		#mobileOnlyGallery img{
+			width: 18em;
+		}	
 }
 
  /* @media (min-width:320px)  {  smartphones, portrait iPhone, portrait 480x320 phones (Android)  }*/
