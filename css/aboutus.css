@@ -104,7 +104,6 @@ body{
 			padding-bottom: 20px;
 		}
 		
-
 .intro2{
 	display: flex;
 	flex-direction: row;
@@ -128,7 +127,8 @@ body{
 		/*height: 300px;
 		width: 480px;*/
 		width: 40em;
-	}	.main-box2 > h3{
+	}	
+		.main-box2 > h3{
 		font-size: 1.5em;
 		padding-bottom: 20px;
 	}
@@ -241,7 +241,7 @@ footer{
 	
 	}
 	.main-box1 {
-
+		width: 100%;
 	}
 
 	.main-img {
